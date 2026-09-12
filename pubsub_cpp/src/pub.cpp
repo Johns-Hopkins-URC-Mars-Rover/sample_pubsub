@@ -12,7 +12,7 @@ class MinimalPublisher : public rclcpp::Node
 {
   public:
     MinimalPublisher()
-    : Node("minimal_publisher")
+    : Node("minimal_publisher_cpp")
     {
       publisher_ = this->create_publisher<std_msgs::msg::UInt32>("minimal_cpp", 10);
       timer_ = this->create_wall_timer(
